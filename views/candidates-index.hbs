@@ -1,0 +1,9 @@
+<h2>There are {{candidates.length}} candiates</h2>
+
+{{#each candidates as |candidate index|}}
+
+<h3>
+  <a href="/candidates/{{candidate.name}}">{{candidate.name}}</a> for President in {{candidate.year}}.
+</h3>
+
+{{/each}}
